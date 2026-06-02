@@ -1,0 +1,9 @@
+resource "aws_instance" "fusionnex_ec2" {
+  
+  ami           = var.ami_name
+  instance_type = var.instance_type
+
+  tags = {
+    Name = "Terraform-EC2"
+  }
+}
